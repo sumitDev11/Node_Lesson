@@ -17,5 +17,5 @@ db.on("error", (err) => {
 db.on("disconnected", () => {
   console.log("Disconnected from MongoDB");
 });
-// sumit
+
 module.exports = db;
