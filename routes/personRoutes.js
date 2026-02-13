@@ -12,9 +12,9 @@ router.get('/', async (req, res) => {           // FETCH DATA FROM DATABASE USIN
   }
 });
 
-router.post('/', async (req, res) => {       // SDD DATA IN DATABASE USING POSTMAN
+router.post('/', async (req, res) => {       // SEND DATA IN DATABASE USING POSTMAN
   try {
-    const data = req.body;
+    const data = (req.body);
     const newPerson = new Person(data);
     const response = await newPerson.save();
     console.log('Data saved successfully');
